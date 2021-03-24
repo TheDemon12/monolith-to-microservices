@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: udagram-feed-microservice
+  labels:
+    run: udagram-feed-microservice
+spec:
+  ports:
+    - port: 80
+      protocol: TCP
+  selector:
+    run: udagram-feed-microservice
