@@ -16,7 +16,7 @@ before_script:
 script:
   - docker --version # print the version for logging
   - docker build -t udagram-auth-microservice project/auth-api/
-  - docker tag udagram-auth-microservice thsedemon12/udagram-auth-microservice:latest
+  - docker tag udagram-auth-microservice thedemon12/udagram-auth-microservice:latest
   - docker build -t udagram-feed-microservice project/feed-api/
   - docker tag udagram-feed-microservice thedemon12/udagram-feed-microservice:latest
 
